@@ -89,7 +89,7 @@
             parent:: __construct($indirizzoDiSpedizione, $nome, $cognome);
         }
 
-        public function cardNumber(){
+        public function verificaNumero(){
             if(strlen($numeroCarta = 16)){
                 return true;
             } else{
@@ -131,6 +131,6 @@
 
         var_dump($cartaGabriele);
 
-        echo $cartaGabriele->cardNumber();
+        echo $cartaGabriele->verificaNumero();
     ?>
 </pre>
